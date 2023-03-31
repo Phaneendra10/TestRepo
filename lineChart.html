@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Line-Chart Phaneendra</title>
+  </head>
+  <body >
+    <div class = "container bg-white mt-5 shadow" style = "width: 60vw">
+        <h1>Covid cases in India</h1>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script>
+        var lineChart = document.getElementById("myChart").getContext("2d");
+        var chart = new Chart(lineChart, {
+            type: "line",
+            data:{
+                labels: ["January", "Febraury", "March", "April", "May", "June"],
+                datasets: [{
+                    label: "Firstwave",
+                    backgroundColor: ["#e79bfa", "#292da3", "#ed2409", "#000708", "#0c6e14", "#e3f207"],
+                    borderColor: "#dbade0",
+                    data: [1000, 3000, 8000, 11000, 9000, 10000],
+                    tension: 0.2,
+                    fill: true,
+                    borderWidth: 2
+                },
+                {
+                    label: "Secondwave",
+                    backgroundColor: ["#092182", "#9bfaf0", "yellow", "red", "#0c6e14", "#9bfaf0"],
+                    borderColor: "#2bede3",
+                    data: [8000, 9000, 8500, 13000, 10000, 12000],
+                    tension: 0.2,
+                    fill: true,
+                    borderWidth: 2
+                }]
+            }
+        })
+    </script>
+  </body>
+</html>
