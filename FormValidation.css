@@ -1,0 +1,30 @@
+.bg-container{
+    background-image: linear-gradient(120deg, #1259de, #6ce7f5);
+    height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+
+.box-container{
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 20px;
+    width: auto;
+}
+
+.heading{
+    color: #120b8c;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100px;
+    height: 38px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
